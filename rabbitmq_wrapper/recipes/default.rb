@@ -14,6 +14,7 @@ rabbitmq_plugin "rabbitmq_management" do
   notifies :restart, "service[rabbitmq-server]"
 end
 
+#modify rabbitmq config template
 chef_gem "chef-rewind"
 require 'chef/rewind'
 
